@@ -1,0 +1,25 @@
+Задание №2
+Смысл текста не отображает его внешний вид
+<p class="green">Это красный текст</p>
+<p class="red" style="color:green">Это тоже красный текст</p>
+
+Смысл текста не отражает его внешний вид Проблема в неверном значении атрибута style. Должно быть:
+
+<p style=color:red>Это красный текст</p>
+<p style=color:red> Это тоже красный текст</p>
+
+Смысл текста не отображает внешний вид
+<p><span class="xxsmall">В</span> <span font-size="xsmall">этом</span>
+    <b class="medium">абзаце</b> <span class="xlarge">все</span> <span large>слова</span>
+    <span font="size=small">разного</span> <span size="xxlarge">размера</span></p>
+
+Должно быть:
+<p>
+    <span style="font-size: 12px;">в</span>
+    <span style="font-size: 14px;">этом</span>
+    <span style="font-size: 16px;">абзаце</span>
+    <span style="font-size: 18px;">все</span>
+    <span style="font-size: 20px;">слова</span>
+    <span style="font-size: 22px;">разного</span>
+    <span style="font-size: 24px;">размера</span>
+</p>
